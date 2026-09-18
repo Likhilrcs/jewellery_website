@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f7f4;
+  color: #111;
+}
+
+.jewelry-page {
+  width: 100%;
+}
+
+/* VIDEO */
+
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  background: #111;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.video-content {
+  position: absolute;
+  z-index: 2;
+  left: 8%;
+  bottom: 12%;
+  color: white;
+}
+
+.video-content p {
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.video-content h1 {
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -3px;
+  margin-bottom: 30px;
+}
+
+.video-content button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* SECTION */
+
+.jewelry-section {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 90px 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+.heading p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.heading h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.heading span {
+  color: #777;
+  font-size: 14px;
+}
+
+.poster1{
+    margin: auto;
+    width: 93%;
+    height: fit-content;
+   
+    img{
+        width: 97%;
+        height: 390px;
+        margin: 30px 30px;
+        border-radius: 30px;
+
+        
+    }
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+
+.filters input {
+  height: 45px;
+  width: 260px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  outline: none;
+  background: white;
+}
+
+.filters button {
+  height: 45px;
+  padding: 0 22px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #eee;
+}
+
+.filters button.active {
+  background: #111;
+  color: white;
+  border-color: #111;
+}
+
+
+
+.jewelry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.jewelry-card {
+  background: rgb(229, 223, 223);
+  border-radius: 20px;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.85;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.jewelry-card:hover img {
+  transform: scale(1.06);
+}
+
+.heart {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info > p {
+  color: #999;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.card-info h3 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-bottom strong {
+  font-size: 15px;
+}
+
+.card-bottom button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1000px) {
+  .jewelry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video-content h1 {
+    font-size: 55px;
+  }
+}
+
+
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .video-box {
+    height: 65vh;
+  }
+
+  .video-content {
+    left: 6%;
+    bottom: 10%;
+  }
+
+  .video-content h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .jewelry-section {
+    width: 92%;
+    padding: 60px 0;
+  }
+
+  .heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .heading h2 {
+    font-size: 38px;
+  }
+
+  .filters input {
+    width: 100%;
+  }
+
+  .filters button {
+    flex: 1;
+    padding: 0 10px;
+  }
+
+  .jewelry-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .card-info {
+    padding: 12px;
+  }
+
+  .card-info h3 {
+    font-size: 14px;
+  }
+
+  .card-bottom strong {
+    font-size: 12px;
+  }
+}
+
+
+
+new-collection {
+  width: 100%;
+  padding: 100px 6%;
+  background: #faf8f3;
+  box-sizing: border-box;
+}
+
+/* Heading */
+
+.collection-heading {
+  max-width: 750px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.collection-subtitle {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #a47725;
+}
+
+.collection-heading h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: #241f1a;
+}
+
+.collection-heading h2 span {
+  color: #b88932;
+  font-style: italic;
+}
+
+.collection-heading p {
+  max-width: 600px;
+  margin: 22px auto 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #777067;
+}
+
+/* Cards */
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.collection-card {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: 2px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+}
+
+.collection-card:nth-child(3) {
+  grid-column: span 2;
+  min-height: 600px;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Dark overlay */
+
+.collection-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to top,
+      rgba(20, 15, 10, 0.82) 0%,
+      rgba(20, 15, 10, 0.3) 45%,
+      rgba(20, 15, 10, 0.05) 75%
+    );
+  transition: background 0.4s ease;
+}
+
+.collection-card:hover .collection-overlay {
+  background:
+    linear-gradient(
+      to top,
+      rgba(20, 15, 10, 0.9) 0%,
+      rgba(20, 15, 10, 0.35) 55%,
+      rgba(20, 15, 10, 0.1) 100%
+    );
+}
+
+/* Content */
+
+.collection-content {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 35px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  color: white;
+}
+
+.collection-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-style: italic;
+  color: #e1bb70;
+  min-width: 35px;
+}
+
+.collection-content h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.collection-content p {
+  max-width: 480px;
+  margin: 0 0 22px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Button */
+
+.collection-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #e4bf75;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: gap 0.3s ease;
+}
+
+.collection-btn span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.collection-btn:hover {
+  gap: 18px;
+}
+
+/* Image zoom */
+
+.collection-card::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  background: inherit;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.7s ease;
+  z-index: 0;
+}
+
+.collection-card:hover::before {
+  transform: scale(1.05);
+}
+
+/* Keep overlay and content above zoom image */
+
+.collection-card .collection-overlay {
+  z-index: 1;
+}
+
+.collection-card .collection-content {
+  z-index: 2;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .new-collection {
+    padding: 80px 5%;
+  }
+
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-card,
+  .collection-card:nth-child(3) {
+    grid-column: span 1;
+    min-height: 500px;
+  }
+
+  .collection-content {
+    left: 30px;
+    right: 30px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .new-collection {
+    padding: 65px 20px;
+  }
+
+  .collection-heading {
+    margin-bottom: 40px;
+  }
+
+  .collection-heading h2 {
+    font-size: 38px;
+  }
+
+  .collection-heading p {
+    font-size: 14px;
+  }
+
+  .collection-card,
+  .collection-card:nth-child(3) {
+    min-height: 430px;
+  }
+
+  .collection-content {
+    left: 24px;
+    right: 24px;
+    bottom: 25px;
+    display: block;
+  }
+
+  .collection-number {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .collection-content h3 {
+    font-size: 30px;
+  }
+
+  .collection-content p {
+    font-size: 13px;
+  }
+}
