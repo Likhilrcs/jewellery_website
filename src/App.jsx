@@ -56,7 +56,6 @@ function App() {
         <Gold />
         <Collections />
         <Luxzari />
-        <Gold />
         <Gallary />
         <Scrolling />
         <Footer />
