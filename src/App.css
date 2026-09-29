@@ -1,3 +1,147 @@
+.app {
+  min-height: 100vh;
+  width: 100%;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.app.light .navbar {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark .navbar {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.app.light .navbar-menu a {
+  color: #000000;
+}
+
+.app.dark .navbar-menu a {
+  color: #ffffff;
+}
+
+.app.light .brand h2,
+.app.light .brand p {
+  color: #000000;
+}
+
+.app.dark .brand h2,
+.app.dark .brand p {
+  color: #ffffff;
+}
+
+.app.light main {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark main {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.app.light h1,
+.app.light h2,
+.app.light h3,
+.app.light h4,
+.app.light h5,
+.app.light h6 {
+  color: #000000;
+}
+
+.app.dark h1,
+.app.dark h2,
+.app.dark h3,
+.app.dark h4,
+.app.dark h5,
+.app.dark h6 {
+  color: #ffffff;
+}
+
+.app.light p {
+  color: #000000;
+}
+
+.app.dark p {
+  color: #ffffff;
+}
+.app.light a {
+  color: #000000;
+}
+
+.app.dark a {
+  color: #ffffff;
+}
+
+.theme-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+
+
+
+.app.light .theme-btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.app.dark .theme-btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.light .login-btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.app.dark .login-btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.light section {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark section {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.app.light main div {
+  color: #000000;
+}
+
+.app.dark main div {
+  color: #ffffff;
+}
+.app,
+.app *,
+.navbar,
+main,
+section {
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease;
 
 
 .light {
