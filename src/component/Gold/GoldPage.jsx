@@ -68,7 +68,7 @@ function GoldPage() {
     },
     {
       id: 7,
-      name: "Gold Ring",
+      name: "Gold Ring", 
       category: "Ring",
       price: 10000,
       image: Ring3

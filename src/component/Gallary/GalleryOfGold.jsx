@@ -4,49 +4,49 @@ import "./GalleryOfGold.css";
 const galleryImages = [
   {
     image:
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/1200x/65/ca/d0/65cad0d82c0b0b331c769f474a425a10.jpg",
     title: "Golden Elegance",
     collection: "Signature Collection",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/736x/39/cd/3a/39cd3a203adb5c3569cce3841f72d145.jpg",
     title: "Royal Necklace",
     collection: "Royal Gold",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/736x/03/84/19/0384192940cf4287d6f63e88cae7126b.jpg",
     title: "Diamond Glow",
     collection: "Diamond Collection",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/736x/f5/ab/e6/f5abe6e1100cae36177cc2680cd1d828.jpg",
     title: "Golden Details",
     collection: "Everyday Gold",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/736x/5f/81/54/5f81544b2e8f198ff704299998518ba5.jpg",
     title: "Bridal Grace",
     collection: "Bridal Collection",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/736x/0b/c2/76/0bc2765e5e64cb9eda439f46c3f080ce.jpg",
     title: "Classic Gold",
     collection: "Heritage Collection",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/1200x/ed/46/99/ed4699c3599e49422aff05344c113863.jpg",
     title: "Modern Gold",
     collection: "Contemporary Collection",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/736x/e7/b0/19/e7b01930b13915f3c4159a0ceac527a1.jpg",
     title: "Timeless Beauty",
     collection: "Classic Collection",
   },
