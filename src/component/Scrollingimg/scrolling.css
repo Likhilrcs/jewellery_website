@@ -1,0 +1,33 @@
+.scroll-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  background: #fff;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  gap: 25px;
+  animation: scrollImages 20s linear infinite;
+}
+
+.scroll-track img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+
+
+@keyframes scrollImages {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,415 @@
+.footer {
+  width: 100%;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+.footer-newsletter {
+  max-width: 1250px;
+  margin: auto;
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease;
+}
+.newsletter-content {
+  max-width: 550px;
+}
+.newsletter-content > span {
+  display: block;
+  color: #c9a86a;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+}
+.newsletter-content h2 {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 4px 0;
+  padding: 0;
+  transition: color 0.4s ease;
+}
+.newsletter-content p {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.5;
+  transition: color 0.4s ease;
+}
+.newsletter-form {
+  display: flex;
+  width: 400px;
+  height: 42px;
+}
+.newsletter-form input {
+  flex: 1;
+  padding: 0 12px;
+  outline: none;
+  font-size: 15px;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease;
+}
+.newsletter-form input::placeholder {
+  transition: color 0.4s ease;
+}
+.newsletter-form button {
+ padding: 0 18px;
+  border: none;
+  background: #c9a86a;
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+.newsletter-form button:hover {
+  background: #e0c58d;
+}
+.newsletter-form button span {
+  margin-left: 5px;
+}
+.footer-main {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1fr
+    1.2fr;
+
+  gap: 20px;
+}
+.footer-brand {
+  max-width: 280px;
+}
+.footer-logo {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #e1c78c;
+}
+
+.footer-tagline {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  transition: color 0.4s ease;
+}
+
+.footer-brand > p {
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: color 0.4s ease;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+.footer-socials a {
+  text-decoration: none;
+  font-size: 14px;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #d7b46a !important;
+  transform: translateY(-2px);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer-column h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing:0.5px;
+  transition: color 0.4s ease;
+}
+
+.footer-column a {
+  text-decoration: none;
+  font-size: 14px;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #d7b46a !important;
+  transform: translateX(3px);
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: color 0.4s ease;
+}
+
+.footer-contact p span {
+  color: #d7b46a;
+  min-width: 15px;
+}
+ 
+.app.light .footer {
+  background: #f9f8f8;
+ 
+  color: #222222;
+}
+ 
+.app.light .footer-newsletter {
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+ 
+.app.light .newsletter-content h2 {
+  color: #222222;
+}
+ 
+.app.light .newsletter-content p {
+  color: #666666;
+}
+ 
+.app.light .newsletter-form input {
+  background: #ffffff;
+ 
+  color: #222222;
+ 
+  border: 1px solid #dddddd;
+  border-right: none;
+}
+ 
+.app.light .newsletter-form input::placeholder {
+  color: #999999;
+}
+ 
+.app.light .footer-tagline {
+  color: #777777;
+}
+ 
+.app.light .footer-brand > p {
+  color: #666666;
+}
+ 
+.app.light .footer-socials a {
+  color: #555555;
+}
+ 
+.app.light .footer-column h3 {
+  color: #222222;
+}
+ 
+.app.light .footer-column a {
+  color: #666666;
+}
+ 
+.app.light .footer-contact p {
+  color: #666666;
+}
+ 
+ 
+/* =====================================================
+   DARK MODE
+ 
+.app.dark .footer {
+  background: #080808;
+ 
+  color: #ffffff;
+}
+ 
+.app.dark .footer-newsletter {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+ 
+.app.dark .newsletter-content h2 {
+  color: #ffffff;
+}
+ 
+.app.dark .newsletter-content p {
+  color: rgba(255, 255, 255, 0.6);
+}
+ 
+.app.dark .newsletter-form input {
+  background: rgba(255, 255, 255, 0.04);
+ 
+  color: #ffffff;
+ 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: none;
+}
+ 
+.app.dark .newsletter-form input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+ 
+.app.dark .footer-tagline {
+  color: rgba(255, 255, 255, 0.55);
+}
+ 
+.app.dark .footer-brand > p {
+  color: rgba(255, 255, 255, 0.55);
+}
+ 
+.app.dark .footer-socials a {
+  color: rgba(255, 255, 255, 0.7);
+}
+ 
+.app.dark .footer-column h3 {
+  color: #ffffff;
+}
+ 
+.app.dark .footer-column a {
+  color: rgba(255, 255, 255, 0.55);
+}
+ 
+.app.dark .footer-contact p {
+  color: rgba(255, 255, 255, 0.55);
+}
+ 
+ 
+
+
+/* =====================================================
+   LIGHT MODE
+
+.app.light .footer {
+  background: #f9f8f8;
+
+  color: #222222;
+}
+
+.app.light .footer-newsletter {
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+.app.light .newsletter-content h2 {
+  color: #222222;
+}
+
+.app.light .newsletter-content p {
+  color: #666666;
+}
+
+.app.light .newsletter-form input {
+  background: #ffffff;
+
+  color: #222222;
+
+  border: 1px solid #dddddd;
+  border-right: none;
+}
+
+.app.light .newsletter-form input::placeholder {
+  color: #999999;
+}
+
+.app.light .footer-tagline {
+  color: #777777;
+}
+
+.app.light .footer-brand > p {
+  color: #666666;
+}
+
+.app.light .footer-socials a {
+  color: #555555;
+}
+
+.app.light .footer-column h3 {
+  color: #222222;
+}
+
+.app.light .footer-column a {
+  color: #666666;
+}
+
+.app.light .footer-contact p {
+  color: #666666;
+}
+
+
+/* =====================================================
+   DARK MODE
+
+.app.dark .footer {
+  background: #080808;
+
+  color: #ffffff;
+}
+
+.app.dark .footer-newsletter {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.app.dark .newsletter-content h2 {
+  color: #ffffff;
+}
+
+.app.dark .newsletter-content p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.app.dark .newsletter-form input {
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: none;
+}
+
+.app.dark .newsletter-form input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.app.dark .footer-tagline {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.app.dark .footer-brand > p {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.app.dark .footer-socials a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app.dark .footer-column h3 {
+  color: #ffffff;
+}
+
+.app.dark .footer-column a {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.app.dark .footer-contact p {
+  color: rgba(255, 255, 255, 0.55);
+}
