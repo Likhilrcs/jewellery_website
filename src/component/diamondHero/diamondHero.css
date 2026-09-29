@@ -1,0 +1,199 @@
+.diamond-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+.diamond-hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.diamond-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.30),
+      rgba(0, 0, 0, 0.20)
+    );
+  z-index: 2;
+  transition:
+    background 0.4s ease;
+}
+.diamond-hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition:
+    color 0.4s ease;
+}
+.diamond-small-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition:
+    color 0.4s ease;
+}
+.diamond-hero-content h1 {
+  margin: 0 0 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 65px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  text-shadow:
+    0 3px 15px rgba(0, 0, 0, 0.5);
+  transition:
+    color 0.4s ease;
+}
+.diamond-hero-content > p {
+ margin: 0 0 15px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 400;
+  transition:
+    color 0.4s ease;
+}
+.diamond-description {
+  max-width: 700px;
+  margin: 0 auto 30px !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.7;
+  transition:
+    color 0.4s ease;
+}
+.diamond-explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 28px;
+  border: 1px solid #d7b46a;
+  border-radius: 30px;
+  background: #d7b46a;
+  font-size: 15px;
+  font-weight: 600;
+  transition:
+    all 0.3s ease;
+}
+.diamond-explore-btn span {
+  font-size: 20px;
+  transition:
+    transform 0.3s ease;
+}
+.diamond-explore-btn:hover {
+  background: transparent;
+  border-color: #ffffff;
+}
+.diamond-explore-btn:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =====================================================
+   LIGHT THEME
+===================================================== */
+
+.app.light .diamond-hero {
+  background: #ffffff;
+}
+.app.light .diamond-hero-overlay {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.30),
+      rgba(0, 0, 0, 0.20)
+    );
+}
+.app.light .diamond-hero-content {
+  color: #ffffff;
+}
+.app.light .diamond-small-text {
+  color: #d7b46a;
+}
+.app.light .diamond-hero-content h1 {
+  color: #ffffff;
+}
+.app.light .diamond-hero-content > p {
+  color: #ffffff;
+}
+.app.light .diamond-description {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+.app.light .diamond-explore-btn {
+  background: #d7b46a;
+  color: #111111;
+  border-color: #d7b46a;
+}
+.app.light .diamond-explore-btn:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+
+/* =====================================================
+   DARK THEME
+===================================================== */
+
+.app.dark .diamond-hero {
+  background: #111111;
+}
+.app.dark .diamond-hero-overlay {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.30)
+    );
+}
+.app.dark .diamond-hero-content {
+  color: #ffffff;
+}
+.app.dark .diamond-small-text {
+  color: #d7b46a;
+}
+.app.dark .diamond-hero-content h1 {
+  color: #ffffff;
+}
+.app.dark .diamond-hero-content > p {
+  color: #ffffff;
+}
+.app.dark .diamond-description {
+  color: rgba(255, 255, 255, 0.80) !important;
+}
+.app.dark .diamond-explore-btn {
+  background: #d7b46a;
+  color: #111111;
+  border-color: #d7b46a;
+}
+.app.dark .diamond-explore-btn:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
