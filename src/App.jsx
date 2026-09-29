@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Gold from './component/Gold/GoldPage.jsx'
 import "./component/navbar/navbar.css";
-import Hero from "./component/hero.jsx";
+import Hero from "./component/hero/hero.jsx";
 import Collections from "./component/collections/collection.jsx";
 import Luxzari from "./component/Luxzari/luxzari.jsx";
 import Scrolling from "./component/scrollingimg/scrollimg.jsx";
 import Footer from "./component/footer/footer.jsx";
+import Gallary from "./component/Gallary/GalleryOfGold.jsx"
 
 import "./App.css";
 
