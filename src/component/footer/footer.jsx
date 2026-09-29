@@ -1,11 +1,11 @@
 import "./footer.css";
 function Footer() {
   return (
-    <footer className="diamond-footer">
+    <footer className="footer">
             <div className="footer-newsletter">
               <div className="newsletter-content">
                 <span>STAY IN THE LOOP</span>
-                <h2>Discover New Diamond and Gold Collections</h2>
+                <h2>Discover New Diamond Collections</h2>
                 <p>Subscribe to receive new collection launches, jewellery inspiration,exclusive offers and more.</p>
               </div>
               <div className="newsletter-form">
@@ -29,9 +29,9 @@ function Footer() {
                 <a href="#">Diamond Rings</a>
                 <a href="#">Diamond Earrings</a>
                 <a href="#">Diamond Necklaces</a>
-                <a href="#">Gold Rings</a>
-                <a href="#">Gold  Chains</a>
-                <a href="#">Gold Necklaces</a>
+                <a href="#">Diamond Bracelets</a>
+                <a href="#">Diamond Chains</a>
+                <a href="#">Diamond Pendants</a>
                 <a href="#">Custom Jewellery</a>
               </div>
               <div className="footer-column">

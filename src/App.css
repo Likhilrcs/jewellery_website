@@ -142,4 +142,14 @@ section {
     background-color 0.4s ease,
     color 0.4s ease,
     border-color 0.4s ease;
+
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: #121212;
+  color: white;
 }

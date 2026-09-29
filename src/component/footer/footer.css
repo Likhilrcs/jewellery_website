@@ -88,7 +88,7 @@
     1fr
     1fr
     1.2fr;
- 
+
   gap: 20px;
 }
 .footer-brand {
@@ -101,14 +101,14 @@
   font-weight: 400;
   color: #e1c78c;
 }
- 
+
 .footer-tagline {
   display: block;
   margin-top: 2px;
   font-size: 11px;
   transition: color 0.4s ease;
 }
- 
+
 .footer-brand > p {
   margin-top: 12px;
   margin-bottom: 0;
@@ -116,7 +116,7 @@
   line-height: 1.5;
   transition: color 0.4s ease;
 }
- 
+
 .footer-socials {
   display: flex;
   gap: 14px;
@@ -129,12 +129,12 @@
     color 0.3s ease,
     transform 0.3s ease;
 }
- 
+
 .footer-socials a:hover {
   color: #d7b46a !important;
   transform: translateY(-2px);
 }
- 
+
 .footer-column {
   display: flex;
   flex-direction: column;
@@ -147,7 +147,7 @@
   letter-spacing:0.5px;
   transition: color 0.4s ease;
 }
- 
+
 .footer-column a {
   text-decoration: none;
   font-size: 14px;
@@ -155,7 +155,7 @@
     color 0.3s ease,
     transform 0.3s ease;
 }
- 
+
 .footer-column a:hover {
   color: #d7b46a !important;
   transform: translateX(3px);
@@ -174,16 +174,11 @@
   line-height: 1.4;
   transition: color 0.4s ease;
 }
- 
+
 .footer-contact p span {
   color: #d7b46a;
   min-width: 15px;
 }
- 
- 
-/* =====================================================
-   LIGHT MODE
-===================================================== */
  
 .app.light .footer {
   background: #f9f8f8;
@@ -243,7 +238,6 @@
  
 /* =====================================================
    DARK MODE
-===================================================== */
  
 .app.dark .footer {
   background: #080808;
@@ -301,3 +295,121 @@
 }
  
  
+
+
+/* =====================================================
+   LIGHT MODE
+
+.app.light .footer {
+  background: #f9f8f8;
+
+  color: #222222;
+}
+
+.app.light .footer-newsletter {
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+.app.light .newsletter-content h2 {
+  color: #222222;
+}
+
+.app.light .newsletter-content p {
+  color: #666666;
+}
+
+.app.light .newsletter-form input {
+  background: #ffffff;
+
+  color: #222222;
+
+  border: 1px solid #dddddd;
+  border-right: none;
+}
+
+.app.light .newsletter-form input::placeholder {
+  color: #999999;
+}
+
+.app.light .footer-tagline {
+  color: #777777;
+}
+
+.app.light .footer-brand > p {
+  color: #666666;
+}
+
+.app.light .footer-socials a {
+  color: #555555;
+}
+
+.app.light .footer-column h3 {
+  color: #222222;
+}
+
+.app.light .footer-column a {
+  color: #666666;
+}
+
+.app.light .footer-contact p {
+  color: #666666;
+}
+
+
+/* =====================================================
+   DARK MODE
+
+.app.dark .footer {
+  background: #080808;
+
+  color: #ffffff;
+}
+
+.app.dark .footer-newsletter {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.app.dark .newsletter-content h2 {
+  color: #ffffff;
+}
+
+.app.dark .newsletter-content p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.app.dark .newsletter-form input {
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: none;
+}
+
+.app.dark .newsletter-form input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.app.dark .footer-tagline {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.app.dark .footer-brand > p {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.app.dark .footer-socials a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.app.dark .footer-column h3 {
+  color: #ffffff;
+}
+
+.app.dark .footer-column a {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.app.dark .footer-contact p {
+  color: rgba(255, 255, 255, 0.55);
+}

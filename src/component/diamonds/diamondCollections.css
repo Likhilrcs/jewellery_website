@@ -1,0 +1,219 @@
+.diamond-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.diamond-heading {
+  text-align: center;
+  padding: 70px 20px 40px;
+}
+.diamond-heading h2 {
+  margin: 0 0 25px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #222;
+}
+
+.diamond-heading span {
+  color: #030202;
+  font-size: 20px;
+}
+.diamond-grid {
+  padding-top:50px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.diamond-card {
+ background: rgb(229, 223, 223);
+  border-radius: 20px; 
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+.diamond-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.diamond-image {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.diamond-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.diamond-card:hover .diamond-image img {
+  transform: scale(1.08);
+}
+.diamond-info {
+  padding: 10px;
+}
+.diamond-info h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #222;
+  min-height: 20px;
+}
+.diamond-price {
+  margin: 0 0 15px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #333;
+  padding-top: 20px;
+}
+.view-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-bottom button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.search-box-jewellery { 
+  display: flex; 
+  width: 500px; 
+  max-width: 90%; 
+  margin: 30px auto; 
+  border: 2px solid #222; 
+  border-radius: 30px; 
+  overflow: hidden; 
+  background: white; 
+}
+.search-box-jewellery input { 
+  flex: 1; 
+  padding: 14px 20px; 
+  border: none; 
+  outline: none; 
+  font-size: 16px; 
+}
+.all-collections{
+  text-align:center;
+  font-size:40px;
+  font-weight:bold;
+  font-family: Georgia, serif;
+}
+
+/* =====================================================
+   LIGHT THEME
+===================================================== */
+
+.app.light .diamond-section {
+  background: #ffffff;
+  color: #222222;
+}
+.app.light .diamond-heading {
+  background: #ffffff;
+}
+.app.light .diamond-heading h2 {
+  color: #222222;
+}
+.app.light .diamond-heading span {
+  color: #333333;
+}
+.app.light .diamond-grid {
+  background: #ffffff;
+}
+.app.light .diamond-card {
+  background: #e5dfdf;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+.app.light .diamond-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.app.light .diamond-image {
+  background: #f5f5f5;
+}
+.app.light .diamond-info h3 {
+  color: #222222;
+}
+.app.light .diamond-price {
+  color: #333333;
+}
+.app.light .view-bottom button {
+  color: #222222;
+}
+.app.light .search-box-jewellery {
+  background: #ffffff;
+  border-color: #222222;
+}
+.app.light .search-box-jewellery input {
+  background: #ffffff;
+  color: #222222;
+}
+.app.light .search-box-jewellery input::placeholder {
+  color: #777777;
+}
+.app.light .all-collections {
+  color: #222222;
+}
+
+
+/* =====================================================
+   DARK THEME
+===================================================== */
+
+.app.dark .diamond-section {
+  background: #121212;
+  color: #f5f5f5;
+}
+.app.dark .diamond-heading {
+  background: #121212;
+}
+.app.dark .diamond-heading h2 {
+  color: #ffffff;
+}
+.app.dark .diamond-heading span {
+  color: #cccccc;
+}
+.app.dark .diamond-grid {
+  background: #121212;
+}
+.app.dark .diamond-card {
+  background: #1e1e1e;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+}
+.app.dark .diamond-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.60);
+}
+.app.dark .diamond-image {
+  background: #2a2a2a;
+}
+.app.dark .diamond-info h3 {
+  color: #ffffff;
+}
+.app.dark .diamond-price {
+  color: #dddddd;
+}
+.app.dark .view-bottom button {
+  color: #ffffff;
+}
+.app.dark .search-box-jewellery {
+  background: #1e1e1e;
+  border-color: #ffffff;
+}
+.app.dark .search-box-jewellery input {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+.app.dark .search-box-jewellery input::placeholder {
+  color: #aaaaaa;
+}
+.app.dark .all-collections {
+  color: #ffffff;
+}

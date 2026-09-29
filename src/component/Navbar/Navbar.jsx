@@ -1,6 +1,6 @@
-import "./navbar.css";
-
-function Navbar({ darkMode, toggleTheme }) {
+import "./Navbar.css";
+ 
+function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -10,7 +10,8 @@ function Navbar({ darkMode, toggleTheme }) {
           <p>JEWELLERY</p>
         </div>
       </div>
-
+ 
+ 
       <ul className="navbar-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#collections">Collections</a></li>
@@ -18,8 +19,9 @@ function Navbar({ darkMode, toggleTheme }) {
         <li><a href="#new">New Arrivals</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#cart"> Cart</a></li>
+        <li><button>Drak</button></li>
       </ul>
-        <button className="theme-btn" onClick={toggleTheme}>{darkMode ? "Light Mode" : "Dark Mode" }</button>
+ 
  
       <div className="navbar-actions">
  <button className="login-btn">Login </button>
@@ -29,4 +31,3 @@ function Navbar({ darkMode, toggleTheme }) {
 }
  
 export default Navbar;
- 
