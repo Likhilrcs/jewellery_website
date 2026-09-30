@@ -1,5 +1,6 @@
 .luxzari-container{
     background: white;
+  
 }
 .luxzari-section {
   padding: 80px 6%;
@@ -139,7 +140,6 @@
   display: flex;
   justify-content: left;
   position: relative;
-
 }
 .photo img{
   height: 500px;
@@ -151,41 +151,47 @@
 .photo-content{
   margin-top: 50px;
   justify-content: right;
-    left:15%;
-    position: relative;
+  right:35%;
+   text-align: right; 
 }
 .photo h1{
   color: burlywood;
   font-size: 55px;
+  padding-bottom:30px;
 }
 .photo p{
   font-family: serif;
   font-size: 25px;
 color: rgb(74, 72, 72);
 position: relative;
+padding-bottom:30px;
+text-align: center;
+left:150px;
 }
 
 .photo1 img{
-  height: 400px;
+  position: relative;
+   height: 400px;
   width: 350px;
   top: 0px;
   float: right;
   box-shadow: 5px 5px white ;
 }
 .photo1-content{
-  margin-top: 50px;
+  margin-top: 0px;
   justify-content: left;
- padding-left: 20px;
-  
+  margin-left:0px;
 }
 .photo1 h1{
   color: burlywood;
   font-size: 45px;
+  padding-top: 80px;
+ left:50px;
 }
 .photo1 p{
   margin-top: 50px;
   font-size: 25px;
   font-family:serif;
   color: rgb(74, 72, 72);
-padding-left: 250px;
+  text-align: center;
 }

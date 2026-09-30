@@ -97,8 +97,8 @@ function Luxzari() {
         </div>
 
       </section>
-      <section className="photo-container">
-        <div className="photo1">
+      <section className="photo-content">
+        <div className="photo1 img">
           <img src={image} alt="photo" />
           <div className="photo1-content">
             <h1>“A Touch of Luxury, A Lifetime of Elegance.”</h1>

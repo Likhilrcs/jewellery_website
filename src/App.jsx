@@ -60,7 +60,7 @@ function App() {
         <Collections />
         <Luxzari />
         <Scrolling />
-         <Gold />
+        <Gold />
         <Gallary />
         <DiamondHero/>
         <CategorySection/>
