@@ -6,7 +6,11 @@ import Collections from "./component/collections/collection.jsx";
 import Luxzari from "./component/Luxzari/luxzari.jsx";
 import Scrolling from "./component/scrollingimg/scrollimg.jsx";
 import Footer from "./component/footer/footer.jsx";
-import Gallary from "./component/Gallary/GalleryOfGold.jsx"
+import Gallary from "./component/Gallary/GalleryOfGold.jsx";
+import DiamondHero from "./component/diamondHero/diamondHero.jsx";
+import CategorySection from "./component/categorySection/categorySection.jsx";
+import DiamondCollection from "./component/diamonds/diamondCollections.jsx";
+import CustomJewellery from "./component/customJewellery/customJewellery.jsx";
 
 import "./App.css";
 
@@ -53,15 +57,18 @@ function App() {
 
       <main>
         <Hero />
-        <Gold />
         <Collections />
         <Luxzari />
-        <Gold />
-        <Gallary />
         <Scrolling />
+         <Gold />
+        <Gallary />
+        <DiamondHero/>
+        <CategorySection/>
+        <DiamondCollection/>
+        <CustomJewellery/>
         <Footer />
       </main>
-
+        
     </div>
   );
 }
