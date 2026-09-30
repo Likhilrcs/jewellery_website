@@ -57,11 +57,11 @@ function App() {
 
       <main>
         <Hero />
-        <Gold />
         <Collections />
         <Luxzari />
-        <Gallary />
         <Scrolling />
+         <Gold />
+        <Gallary />
         <DiamondHero/>
         <CategorySection/>
         <DiamondCollection/>
