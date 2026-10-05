@@ -47,6 +47,7 @@ function Scrolling() {
     <section className="scroll-section">
 
       <div className="scroll-track">
+      
 
         {images.map((item) => (
 
@@ -54,7 +55,7 @@ function Scrolling() {
             className="jewellery-card"
             key={item.id}
           >
-
+            
             <img
               src={item.image}
               alt={item.title}
@@ -69,7 +70,7 @@ function Scrolling() {
               <p>
                 {item.description}
               </p>
-
+                
             </div>
 
           </div>
